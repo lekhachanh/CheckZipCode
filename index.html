@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function CheckZipCode(str) {
+        check = /^[0-9]{5}(?:-[0-9]{4})?$/;
+        if (check.test(str)) {
+            alert("true");
+        }
+        alert("false");
+    }
+    CheckZipCode("03201 - 2150");
+    CheckZipCode("78928");
+
+</script>
+</body>
+</html>
